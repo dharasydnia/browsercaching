@@ -1,4 +1,5 @@
 class ContactsController < ApplicationController
+  caches_action :show
   # GET /contacts
   # GET /contacts.json
   def index
@@ -69,6 +70,7 @@ class ContactsController < ApplicationController
   # PUT /contacts/1
   # PUT /contacts/1.json
   def update
+    expire_action :action => :show
     @contact = Contact.find(params[:id])
 
     respond_to do |format|
@@ -85,6 +87,7 @@ class ContactsController < ApplicationController
   # DELETE /contacts/1
   # DELETE /contacts/1.json
   def destroy
+    expire_action :action => :show
     @contact = Contact.find(params[:id])
     @contact.destroy
 
