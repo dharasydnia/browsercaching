@@ -6,9 +6,13 @@ class ContactsController < ApplicationController
     @contacts = Contact.all_cached
 
 #    @stats = Rails.cache.stats.first.last
-    @brwCache = ActiveSupport::Cache::MemoryStore.new
-    @brwCache.write('cur_time', Time.new)
-    @brrCache = @brwCache.read('cur_time')
+#    @brwCache = ActiveSupport::Cache::MemoryStore.new
+#    @brwCache.write('cur_time', Time.new)
+#    @brrCache = @brwCache.read('cur_time')
+
+    @stats = Rails.cache.stats.first.last
+
+#    raise @stats.inspect
 
     respond_to do |format|
       format.html # index.html.erb

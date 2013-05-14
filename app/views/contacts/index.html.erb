@@ -22,7 +22,7 @@
 
 <br />
 
-<!--h1>Cache Stats</h1>
+<h1>Cache Stats</h1>
 <table>
   <tr>
     <th>Metric</th>
@@ -30,18 +30,19 @@
   </tr>
   <tr>
     <td>Cache hits:</td>
-    <td><%#= @stats['get_hits'] %></td>
+    <td><%= @stats['get_hits'] %></td>
   </tr>
   <tr>
     <td>Cache misses:</td>
-    <td><%#= @stats['get_misses'] %></td>
+    <td><%= @stats['get_misses'] %></td>
   </tr>
   <tr>
     <td>Cache flushes:</td>
-    <td><%#= @stats['cmd_flush'] %></td>
+    <td><%= @stats['cmd_flush'] %></td>
   </tr>
-</table-->
+</table>
 
-Cache - <%= @brrCache %>
+<!--Cache - <%#= @last_mod_time %>-->
+
 <br /><br />
 <%= link_to 'New Contact', new_contact_path %>

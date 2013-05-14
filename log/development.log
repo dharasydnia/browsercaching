@@ -2673,3 +2673,152 @@ Served asset /application.js - 304 Not Modified (1ms)
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-11 11:14:18 +0530
 Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-14 10:58:09 +0530
+Processing by ContactsController#index as HTML
+  Rendered contacts/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 693ms (Views: 629.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-14 10:58:10 +0530
+Served asset /application.css - 200 OK (26ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-14 10:58:10 +0530
+Served asset /scaffolds.css - 200 OK (17ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-14 10:58:10 +0530
+Served asset /jquery_ujs.js - 200 OK (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-14 10:58:10 +0530
+Served asset /jquery.js - 200 OK (21ms)
+
+
+Started GET "/assets/contacts.js?body=1" for 127.0.0.1 at 2013-05-14 10:58:10 +0530
+Served asset /contacts.js - 200 OK (13ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2013-05-14 10:58:10 +0530
+Served asset /contacts.css - 200 OK (5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-14 10:58:10 +0530
+Served asset /application.js - 200 OK (63ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-14 11:35:34 +0530
+Processing by ContactsController#index as HTML
+Completed 500 Internal Server Error in 237ms
+
+RuntimeError (#<ActiveSupport::Cache::FileStore:0xa007e18 @options={}, @cache_path="/home/dhara/ror/3.2/browsercaching/tmp/cache/", @thread_local_key=:active_support_cache_file_store_local_cache_83902220, @middleware=#<ActiveSupport::Cache::Strategy::LocalCache::Middleware:0xa05422c @name="ActiveSupport::Cache::Strategy::LocalCache", @thread_local_key=:active_support_cache_file_store_local_cache_83902220, @app=#<Rack::Runtime:0x9f9294c @app=#<Rack::MethodOverride:0x9f92960 @app=#<ActionDispatch::RequestId:0x9f92974 @app=#<Rails::Rack::Logger:0x9f929b0 @app=#<ActionDispatch::ShowExceptions:0x9f929d8 @app=#<ActionDispatch::DebugExceptions:0x9f929ec @app=#<ActionDispatch::RemoteIp:0x9f92a00 @app=#<ActionDispatch::Reloader:0x9f92a14 @app=#<ActionDispatch::Callbacks:0x9f92a28 @app=#<ActiveRecord::ConnectionAdapters::ConnectionManagement:0x9f92a3c @app=#<ActiveRecord::QueryCache:0x9f92ab4 @app=#<ActionDispatch::Cookies:0x9f92b18 @app=#<ActionDispatch::Session::CacheStore:0x9f92bcc @cache=#<ActiveSupport::Cache::FileStore:0xa007e18 ...>, @app=#<ActionDispatch::Flash:0x9f92be0 @app=#<ActionDispatch::ParamsParser:0x9f92c30 @app=#<ActionDispatch::Head:0x9f92c44 @app=#<Rack::ConditionalGet:0x9f92c58 @app=#<Rack::ETag:0x9f92c6c @app=#<ActionDispatch::BestStandardsSupport:0x9f92c94 @app=#<ActionDispatch::Routing::RouteSet:0x9be8fe4>, @header="IE=Edge">, @cache_control="max-age=0, private, must-revalidate", @no_cache_control="no-cache">>>, @parsers={application/xml=>:xml_simple, application/json=>:json}>>, @default_options={:path=>"/", :domain=>nil, :expire_after=>120 seconds, :secure=>false, :httponly=>true, :defer=>false, :renew=>false, :secret=>"114e29c8fa053a113877177c4b54a1dae9fe56683745c37c3c5f34eb4735"}, @key="_session_id", @cookie_only=true>>>>>, @condition=#<Proc:0xa0875c8@/usr/local/rvm/gems/ruby-1.9.3-p194/gems/railties-3.2.13/lib/rails/application.rb:267 (lambda)>, @validated=false>, @check_ip=true, @proxies=/
+      ^127\.0\.0\.1$                | # localhost
+      ^(10                          | # private IP 10.x.x.x
+        172\.(1[6-9]|2[0-9]|3[0-1]) | # private IP in the range 172.16.0.0 .. 172.31.255.255
+        192\.168                      # private IP 192.168.x.x
+       )\.
+    /x>>, @exceptions_app=#<ActionDispatch::PublicExceptions:0xa15b940 @public_path="/home/dhara/ror/3.2/browsercaching/public">>, @taggers=[]>>>, @header_name="X-Runtime">>>):
+  app/controllers/contacts_controller.rb:15:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (46.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-14 11:42:00 +0530
+Processing by ContactsController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `stats' for #<ActiveSupport::Cache::FileStore:0xa007e18>):
+  app/controllers/contacts_controller.rb:13:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.7ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-14 11:52:23 +0530
+Processing by ContactsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/contacts_controller.rb:8:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.7ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-14 11:53:03 +0530
+Processing by ContactsController#index as HTML
+Completed 500 Internal Server Error in 4ms
+
+NoMethodError (undefined method `namespace=' for #<ActiveSupport::Cache::MemoryStore:0xb363ed0>):
+  app/controllers/contacts_controller.rb:9:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-14 11:55:20 +0530
+Processing by ContactsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `namespace=' for #<ActiveSupport::Cache::MemoryStore:0xa59d224>):
+  app/controllers/contacts_controller.rb:16:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-14 12:01:25 +0530
+Processing by ContactsController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError (<#ActiveSupport::Cache::MemoryStore entries=0, size=0, options={}>):
+  app/controllers/contacts_controller.rb:10:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-14 12:01:54 +0530
+Processing by ContactsController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+RuntimeError (<#ActiveSupport::Cache::MemoryStore entries=1, size=19, options={}>):
+  app/controllers/contacts_controller.rb:16:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-05-14 12:02:08 +0530
+Processing by ContactsController#index as HTML
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `namespace' for #<ActiveSupport::Cache::MemoryStore:0xb7fe74c>):
+  app/controllers/contacts_controller.rb:16:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.9ms)
