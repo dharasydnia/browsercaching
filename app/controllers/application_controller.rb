@@ -8,6 +8,6 @@ class ApplicationController < ActionController::Base
 
   def cache_briefly
     return unless Rails.env == "production"
-    expires_in 1.minute, :public => true
+    expires_in 2.minute, :public => true
   end
 end
